@@ -996,9 +996,14 @@ do
     global_keymaps = true,
     global_keymaps_prefix = "<leader>R",
     kulala_keymaps_prefix = "",
+    debug = true,
   }
 end
 
+do
+  vim.pack.add { gh 'github/copilot.vim' }
+  --require('copilot').setup {}
+end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
